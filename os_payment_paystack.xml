@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="3.5" type="plugin" group="payment">
+    <name>Paystack OS Membership Plugin</name>
+    <title>Paystack OS Membership Plugin</title>
+    <author>Paystack</author>
+    <creationDate>23-05-2018</creationDate>
+    <copyright>Copyright 2018 Paystack Team</copyright>
+    <license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+    <authorEmail>support@paystack.com</authorEmail>
+    <authorUrl>www.paystack.com</authorUrl>
+    <version>2.12.2</version>
+    <description>Collect Payment For Membership Pro Extension</description>
+    <files>
+        <filename plugin="os_payment_paystack">os_payment_paystack.php</filename>
+    </files>
+    <params addpath="/components/com_osmembership/params">
+		<param name="pluginoptions" type="pluginoptions" default="plugin" label="osmembership" description="OS Membership options" />
+	</params>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/components/com_osmembership/fields">
+                <field name="mode" type="list" label="Payment Mode" description="Set to Test Mode or Live Mode">
+                    <option value="0">Test Mode</option>
+                    <option value="1">Live Mode</option>
+                </field>
+                <field name="test_pk" type="text" size="40" label="Test Public Key" description="Enter your Paystack Test Public Key" default=""></field>
+                <field name="test_sk" type="text" size="40" label="Test Secret Key" description="Enter your Paystack Test Secret Key" default=""></field>
+                <field name="live_pk" type="text" size="40" label="Live Public Key" description="Enter your Paystack Live Public Key" default=""></field>
+                <field name="live_sk" type="text" size="40" label="Live Secret Key" description="Enter your Paystack Live Secret Key" default=""></field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
