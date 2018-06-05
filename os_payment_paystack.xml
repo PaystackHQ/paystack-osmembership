@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension version="3.5" type="plugin" group="payment">
-    <name>Paystack OS Membership Plugin</name>
+<install version="1.0" type="osmplugin" group="payment">
+    <name>os_paystack</name>
     <title>Paystack OS Membership Plugin</title>
     <author>Paystack</author>
     <creationDate>23-05-2018</creationDate>
@@ -9,7 +9,7 @@
     <authorEmail>support@paystack.com</authorEmail>
     <authorUrl>www.paystack.com</authorUrl>
     <version>2.12.2</version>
-    <description>Collect Payment For Membership Pro Extension</description>
+    <description>Collect Payment For Membership Pro Extension via Paystack</description>
     <files>
         <filename plugin="os_payment_paystack">os_payment_paystack.php</filename>
     </files>
@@ -30,4 +30,4 @@
             </fieldset>
         </fields>
     </config>
-</extension>
+</install>
